@@ -2,18 +2,14 @@
 <html>
     <head>
         <title>Danish Craft Tutorials!</title>
-        <link rel="stylesheet" href="../../../../sidebar.css">
-        <link rel="stylesheet" href="../../../../../main_style.css">
+        <link rel="stylesheet" href="../../../../../main.css">
     </head>
 
     <body class="main_style">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <button type="button" onclick="window.location.href = 'Tutorials/getting_started.html'" class="sidebar_elements">Getting Started</button>
-        </div>
+        <button type="button" onclick="window.location.href = '../python_basics.html'" class="sidebar_elements" style="top:10px;z-index:1;position:fixed;">Back</button>
 
         <!-- Main -->
-        <div class="main_page">
+        <div class="main_page_tutorials">
             <center><h1>Getting Started</h1></center>
             <h2>What is Python?</h2>
             <p>
@@ -21,21 +17,43 @@
                 It's a good language to for new programmers because of it's simplicity and large community.
             </p>
 
-            <!-- Note some things python can do -->
+            <!-- Write some things python can do -->
             <h2>What can Python do?</h2>
             <p>
                 Python can do almost anything. you can make games using <a href="https://pygame.org">PyGame</a>, 
                 websites using <a href="https://djangoproject.com/">Django</a> or <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a>.
             </p>
 
-            <h2>How do i Use python?</h2>
+            <h2>How do i install Python?</h2>
             <p>
                 you need to install Python on your computer.
                 there are multiple ways to do so but the easiest is to download it in the Microsoft Store.
                 if your on a different operating system or can't download it in the Microsoft Store.
                 you can always download it on their website: <a href="https://python.org/downloads">python.org</a>.
-                press the highlighted download button:
-                <img src="Images/downloadpython.png" style="width:700px;height:400px;margin-left:0px;">
+                press the highlighted download button:<br>
+                <img src="Images/downloadpython.png" style="width:700px;height:400px;margin-left:0px;"><br>
+                once the Python installer has finished installing. open it. if you have admin privileges. make sure to check the 2 checkboxes highlighted in red.
+                then press the "Install Now" button which will also be highlighted in red.<br>
+                <img src="Images/pythoninstaller_1.png" style="margin-left:0px;"><br>
+                once Python has finished installing. press the "Close" button highlighted in red.<br>
+                <img src="Images/pythoninstaller_2.png" style="margin-left:0px;"><br>
+                if you didn't install Python with admin privileges. you might still be able to add Python to the PATH.
+                to do so. you have to type "Edit environment varibles for your account" into the search field in the taskbar and hit enter.
+                now under "User varibles for 'your_account'" find the varible called "Path" and press the "Edit" button which will be highlighted in red.<br>
+                <img src="Images/edit_environment_varible_path.png" style="margin-left:0px;"><br>
+                now press the "New" button highlighted in red.<br>
+                <img src="Images/edit_environment_varible_path_2.png" style="margin-left:0px;"><br>
+                now we will need the path to the Python folder. most likely it will be this one "C:\Users\'username'\AppData\Local\Programs\Python\Python312".
+                now paste the path into the PATH varible and make sure to replace 'username' with your account's username.
+                now press the "Move Up" button highlighted in red until it's at the top. this prevents the Microsoft Store from opening when we test it.<br>
+                <img src="Images/edit_environment_varible_path_3.png" style="margin-left:0px;"><br>
+                once you have done that. hit enter and click the "OK" button highlighted in red.<br>
+                <img src="Images/edit_environment_varible_path_4.png" style="margin-left:0px;"><br>
+                now press the other "OK" button which will be highlighted in red.<br>
+                <img src="Images/edit_environment_varible_path_5.png" style="margin-left:0px;"><br>
+                to make sure that Python was added to the PATH. type "cmd" into the search field in the taskbar and hit enter.
+                this will open Command Prompt where we can then type "python" and hit enter. Command Prompt should give you this response:<br>
+                <img src="Images/python_cmd.png" style="margin-left:0px;"><br>
             </p>
         </div>
     </body>

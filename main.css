@@ -1,0 +1,16 @@
+.main_style {
+
+    background-color: grey;
+
+    color: white;
+
+}
+
+.main_page {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+.main_page_tutorials {
+    margin-left: 75px;
+}
